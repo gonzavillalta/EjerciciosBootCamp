@@ -2,9 +2,9 @@ public class Main {
     public static void main(String[] args) {
 
         Cliente cliente = new Cliente();
-        cliente.edad = 34;
-        cliente.nombre = "Salvador";
-        cliente.telefono = "123456789";
+        edadPersona(cliente);
+        nombrePersona(cliente);
+        telefonoPersona(cliente);
 
         Trabajador trabajador = new Trabajador();
 
@@ -15,6 +15,15 @@ public class Main {
         System.out.println(trabajador.salario());
 
 
+    }
+    public static void edadPersona (Cliente cliente) {
+        cliente.edad = 34;
+    }
+    public static void nombrePersona (Cliente cliente) {
+        cliente.nombre = "Salvador";
+    }
+    public static void telefonoPersona (Cliente cliente) {
+        cliente.telefono = "123456789";
     }
 }
 
